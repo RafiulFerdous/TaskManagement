@@ -1,0 +1,32 @@
+html {
+  .bg-success {
+    color: white !important;
+  }
+
+  .bg-primary {
+    color: $white !important;
+  }
+
+  .bg-secondary {
+    color: $white !important;
+  }
+
+  .bg-warning {
+    color: $white !important;
+  }
+}
+.border,
+.v-divider {
+  border-color: rgba(var(--v-border-color), 1) !important;
+}
+
+.v-skeleton-loader .v-skeleton-loader__avatar,
+.v-skeleton-loader .v-skeleton-loader__button,
+.v-skeleton-loader .v-skeleton-loader__chip,
+.v-skeleton-loader .v-skeleton-loader__divider,
+.v-skeleton-loader .v-skeleton-loader__heading,
+.v-skeleton-loader .v-skeleton-loader__image,
+.v-skeleton-loader .v-skeleton-loader__ossein,
+.v-skeleton-loader .v-skeleton-loader__text {
+  background: rgba(#dddddd, var(--v-border-opacity)) !important;
+}

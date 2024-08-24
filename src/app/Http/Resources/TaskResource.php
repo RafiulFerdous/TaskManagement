@@ -12,24 +12,19 @@ class TaskResource extends JsonResource
      *
      * @return array<string, mixed>
      */
-    public function toArray(Request $request): array
+    public function toArray($request): array
     {
         return [
             'id' => $this->id,
             'user_id' => $this->user_id,
-            'title' => $this->title,
+            'project_id ' => $this->project_id ,
+            'name' => $this->name,
             'description' => $this->description,
-            'start_date' => $this->start_date,
-            'start_date_formated' => date('d F, Y', strtotime($this->start_date)),
-            'start_time' => $this->start_time,
-            'start_time_formated' => date('h:i a', strtotime($this->start_time)),
-            'repeat_type' => $this->repeat_type,
-
+            'deadline' => $this->deadline,
+            'priority_level' => $this->priority_level,
+            'created_at' => $this->created_at,
             'status' => $this->status,
-
-            'status_text' => $this->statuses($this->status),
-
-            'status_badge' => $this->statusBadge($this->status),
+//            'status_badge' => $this->statusBadge($this->status),
 
             'user' => $this->whenLoaded('user', function() {
                 return new UserResource($this->user);

@@ -18,12 +18,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-
-
-
-
-
-
+        $schedule->command('send:task-deadline-reminders')->everyMinute();
 
     }
 

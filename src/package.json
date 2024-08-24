@@ -5,13 +5,17 @@
         "build": "vite build"
     },
     "dependencies": {
-
         "@mdi/font": "7.0.96",
-        "@vitejs/plugin-vue": "^5.0.3",
+        "@vitejs/plugin-vue": "^3.0.0",
         "@vueuse/core": "^10.7.2",
+        "jspdf": "^2.5.1",
         "lodash.debounce": "^4.0.8",
+        "pinia": "^2.0.0",
         "roboto-fontface": "*",
-        "vue": "^3.3.0",
+        "vite-plugin-vue-layouts": "^0.8.0",
+        "vite-plugin-vuetify": "^1.0.0",
+        "vue": "^3.4.38",
+        "vue-router": "^4.4.3",
         "vue-tabler-icons": "^2.21.0",
         "vue3-apexcharts": "^1.4.4",
         "vue3-perfect-scrollbar": "^1.6.1",
@@ -19,16 +23,15 @@
     },
     "devDependencies": {
         "@popperjs/core": "^2.10.2",
-        "axios": "^0.27",
+        "axios": "^1.7.5",
         "bootstrap": "^5.2.1",
         "laravel-vite-plugin": "^0.6.0",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "sass": "^1.32.11",
-        "vite": "^3.0.0"
-
-    },
-    "dependencies": {
-        "jspdf": "^2.5.1"
+        "vite": "^3.0.0",
+        "vue-router": "^4.4.3",
+        "vite-plugin-vue-layouts": "^0.8.0",
+        "vite-plugin-vuetify": "^1.0.0"
     }
 }

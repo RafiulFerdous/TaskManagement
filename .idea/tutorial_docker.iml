@@ -8,6 +8,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/src/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/carbonphp/carbon-doctrine-types" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/composer" />
@@ -116,6 +119,16 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/adrianorosa/laravel-geolocation" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/darkaonline/l5-swagger" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/paragonie/sodium_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/pusher/pusher-php-server" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/yajra/laravel-datatables-buttons" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/yajra/laravel-datatables-html" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/yajra/laravel-datatables-oracle" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/zircote/swagger-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

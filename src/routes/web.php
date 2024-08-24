@@ -42,42 +42,22 @@ use App\Http\Controllers\Opsmaneger\OperationManagerController;
 
 //Auth::routes();
 
-Route::get('/', function () {
-    return view('Landing_page.landingpage');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+//Route::prefix('app')->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    Route::get('/{any}', function () {
+        return view('welcome');
+    })->where('any', '.*');
+//});
 
 
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::middleware([App\Http\Middleware\Authenticate::class])->group(function () {
-    //admin auth
-    Route::group(['prefix' => 'admin', 'middleware' => ['admin', 'auth'],], function () {
-        Route::get('dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
-
-    });
-
-
-
-
-    Route::group(['prefix' => 'bidder', 'middleware' => ['bidder', 'auth'], 'namespace' => 'Merchant'], function () {
-        Route::get('dashboard', [BidderController::class, 'index'])->name('bidder.dashboard');
-
-    });
-
-
-
-
-    Route::group(['prefix' => 'propertyowner', 'middleware' => ['property-owner', 'auth'], 'namespace' => 'Opsmaneger'], function () {
-        Route::get('dashboard', [PropertyownerController::class, 'index'])->name('propertyowner.dashboard');
-
-    });
-
-
-
-
-
-});
 

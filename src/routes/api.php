@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TaskController;
 use App\Http\Controllers\Api\UserAuthenticationController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Http\Request;
@@ -26,11 +28,13 @@ Route::post('login',[UserAuthenticationController::class, 'login']);
 Route::post('registration',[UserAuthenticationController::class, 'registration']);
 
 Route::group(['middleware'=>['auth:sanctum','common']],function (){
+    Route::apiResource('tasks', TaskController::class);
 
 });
 
 Route::group(['middleware'=>['auth:sanctum','admin']],function (){
     Route::apiResource('users', UserController::class);
+    Route::apiResource('projects', ProjectController::class);
 });
 
 
